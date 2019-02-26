@@ -1,3 +1,4 @@
+C:\Users\nuras\source\repos\SUDOKU\SUDOKU\bin\Debug\SUDOKU.exe.config
 C:\Users\nuras\source\repos\SUDOKU\SUDOKU\bin\Debug\SUDOKU.exe
 C:\Users\nuras\source\repos\SUDOKU\SUDOKU\bin\Debug\SUDOKU.pdb
 C:\Users\nuras\source\repos\SUDOKU\SUDOKU\obj\Debug\SUDOKU.csprojAssemblyReference.cache

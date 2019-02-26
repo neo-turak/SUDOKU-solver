@@ -109,7 +109,9 @@
             this.G9 = new System.Windows.Forms.TextBox();
             this.H9 = new System.Windows.Forms.TextBox();
             this.I9 = new System.Windows.Forms.TextBox();
-            this.GENERATE = new System.Windows.Forms.Button();
+            this.btn_solve = new System.Windows.Forms.Button();
+            this.btn_generate = new System.Windows.Forms.Button();
+            this.btn_reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // A1
@@ -117,13 +119,13 @@
             this.A1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.A1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.A1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.A1.Location = new System.Drawing.Point(12, 12);
+            this.A1.Location = new System.Drawing.Point(13, 13);
             this.A1.MaxLength = 1;
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(28, 26);
             this.A1.TabIndex = 0;
             this.A1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
- 
+            this.A1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A2
             // 
@@ -134,9 +136,10 @@
             this.A2.MaxLength = 1;
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(28, 26);
-            this.A2.TabIndex = 0;
+            this.A2.TabIndex = 9;
+            this.A2.Text = "3";
             this.A2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.A2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A3
             // 
@@ -147,9 +150,10 @@
             this.A3.MaxLength = 1;
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(28, 26);
-            this.A3.TabIndex = 0;
+            this.A3.TabIndex = 18;
+            this.A3.Text = "1";
             this.A3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.A3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A4
             // 
@@ -159,9 +163,9 @@
             this.A4.MaxLength = 1;
             this.A4.Name = "A4";
             this.A4.Size = new System.Drawing.Size(28, 26);
-            this.A4.TabIndex = 0;
+            this.A4.TabIndex = 27;
             this.A4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-       
+            this.A4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A5
             // 
@@ -171,9 +175,9 @@
             this.A5.MaxLength = 1;
             this.A5.Name = "A5";
             this.A5.Size = new System.Drawing.Size(28, 26);
-            this.A5.TabIndex = 0;
+            this.A5.TabIndex = 36;
             this.A5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.A5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A6
             // 
@@ -183,9 +187,10 @@
             this.A6.MaxLength = 1;
             this.A6.Name = "A6";
             this.A6.Size = new System.Drawing.Size(28, 26);
-            this.A6.TabIndex = 0;
+            this.A6.TabIndex = 45;
+            this.A6.Text = "2";
             this.A6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.A6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A7
             // 
@@ -195,9 +200,9 @@
             this.A7.MaxLength = 1;
             this.A7.Name = "A7";
             this.A7.Size = new System.Drawing.Size(28, 26);
-            this.A7.TabIndex = 0;
+            this.A7.TabIndex = 54;
             this.A7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-      
+            this.A7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A8
             // 
@@ -207,9 +212,9 @@
             this.A8.MaxLength = 1;
             this.A8.Name = "A8";
             this.A8.Size = new System.Drawing.Size(28, 26);
-            this.A8.TabIndex = 0;
+            this.A8.TabIndex = 63;
             this.A8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.A8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // A9
             // 
@@ -219,9 +224,10 @@
             this.A9.MaxLength = 1;
             this.A9.Name = "A9";
             this.A9.Size = new System.Drawing.Size(28, 26);
-            this.A9.TabIndex = 0;
+            this.A9.TabIndex = 72;
+            this.A9.Text = "8";
             this.A9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
+            this.A9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B1
             // 
@@ -232,9 +238,9 @@
             this.B1.MaxLength = 1;
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(28, 26);
-            this.B1.TabIndex = 0;
+            this.B1.TabIndex = 1;
             this.B1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-      
+            this.B1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C1
             // 
@@ -245,9 +251,10 @@
             this.C1.MaxLength = 1;
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(28, 26);
-            this.C1.TabIndex = 0;
+            this.C1.TabIndex = 2;
+            this.C1.Text = "8";
             this.C1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.C1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D1
             // 
@@ -257,9 +264,10 @@
             this.D1.MaxLength = 1;
             this.D1.Name = "D1";
             this.D1.Size = new System.Drawing.Size(28, 26);
-            this.D1.TabIndex = 0;
+            this.D1.TabIndex = 3;
+            this.D1.Text = "2";
             this.D1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-       
+            this.D1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E1
             // 
@@ -269,9 +277,9 @@
             this.E1.MaxLength = 1;
             this.E1.Name = "E1";
             this.E1.Size = new System.Drawing.Size(28, 26);
-            this.E1.TabIndex = 0;
+            this.E1.TabIndex = 4;
             this.E1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.E1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F1
             // 
@@ -281,9 +289,9 @@
             this.F1.MaxLength = 1;
             this.F1.Name = "F1";
             this.F1.Size = new System.Drawing.Size(28, 26);
-            this.F1.TabIndex = 0;
+            this.F1.TabIndex = 5;
             this.F1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.F1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G1
             // 
@@ -293,9 +301,10 @@
             this.G1.MaxLength = 1;
             this.G1.Name = "G1";
             this.G1.Size = new System.Drawing.Size(28, 26);
-            this.G1.TabIndex = 0;
+            this.G1.TabIndex = 6;
+            this.G1.Text = "9";
             this.G1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.G1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H1
             // 
@@ -305,9 +314,9 @@
             this.H1.MaxLength = 1;
             this.H1.Name = "H1";
             this.H1.Size = new System.Drawing.Size(28, 26);
-            this.H1.TabIndex = 0;
+            this.H1.TabIndex = 7;
             this.H1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.H1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I1
             // 
@@ -317,9 +326,10 @@
             this.I1.MaxLength = 1;
             this.I1.Name = "I1";
             this.I1.Size = new System.Drawing.Size(28, 26);
-            this.I1.TabIndex = 0;
+            this.I1.TabIndex = 8;
+            this.I1.Text = "3";
             this.I1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.I1.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B2
             // 
@@ -330,9 +340,10 @@
             this.B2.MaxLength = 1;
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(28, 26);
-            this.B2.TabIndex = 0;
+            this.B2.TabIndex = 10;
+            this.B2.Text = "4";
             this.B2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.B2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C2
             // 
@@ -343,9 +354,10 @@
             this.C2.MaxLength = 1;
             this.C2.Name = "C2";
             this.C2.Size = new System.Drawing.Size(28, 26);
-            this.C2.TabIndex = 0;
+            this.C2.TabIndex = 11;
+            this.C2.Text = "2";
             this.C2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.C2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D2
             // 
@@ -355,9 +367,9 @@
             this.D2.MaxLength = 1;
             this.D2.Name = "D2";
             this.D2.Size = new System.Drawing.Size(28, 26);
-            this.D2.TabIndex = 0;
+            this.D2.TabIndex = 12;
             this.D2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.D2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E2
             // 
@@ -367,9 +379,10 @@
             this.E2.MaxLength = 1;
             this.E2.Name = "E2";
             this.E2.Size = new System.Drawing.Size(28, 26);
-            this.E2.TabIndex = 0;
+            this.E2.TabIndex = 13;
+            this.E2.Text = "9";
             this.E2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.E2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F2
             // 
@@ -379,9 +392,10 @@
             this.F2.MaxLength = 1;
             this.F2.Name = "F2";
             this.F2.Size = new System.Drawing.Size(28, 26);
-            this.F2.TabIndex = 0;
+            this.F2.TabIndex = 14;
+            this.F2.Text = "5";
             this.F2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.F2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G2
             // 
@@ -391,9 +405,9 @@
             this.G2.MaxLength = 1;
             this.G2.Name = "G2";
             this.G2.Size = new System.Drawing.Size(28, 26);
-            this.G2.TabIndex = 0;
+            this.G2.TabIndex = 15;
             this.G2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.G2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H2
             // 
@@ -403,9 +417,9 @@
             this.H2.MaxLength = 1;
             this.H2.Name = "H2";
             this.H2.Size = new System.Drawing.Size(28, 26);
-            this.H2.TabIndex = 0;
+            this.H2.TabIndex = 16;
             this.H2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.H2.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I
             // 
@@ -415,9 +429,10 @@
             this.I.MaxLength = 1;
             this.I.Name = "I";
             this.I.Size = new System.Drawing.Size(28, 26);
-            this.I.TabIndex = 0;
+            this.I.TabIndex = 17;
+            this.I.Text = "7";
             this.I.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.I.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B3
             // 
@@ -428,9 +443,10 @@
             this.B3.MaxLength = 1;
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(28, 26);
-            this.B3.TabIndex = 0;
+            this.B3.TabIndex = 19;
+            this.B3.Text = "9";
             this.B3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.B3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C3
             // 
@@ -441,9 +457,10 @@
             this.C3.MaxLength = 1;
             this.C3.Name = "C3";
             this.C3.Size = new System.Drawing.Size(28, 26);
-            this.C3.TabIndex = 0;
+            this.C3.TabIndex = 20;
+            this.C3.Text = "7";
             this.C3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.C3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D3
             // 
@@ -453,9 +470,9 @@
             this.D3.MaxLength = 1;
             this.D3.Name = "D3";
             this.D3.Size = new System.Drawing.Size(28, 26);
-            this.D3.TabIndex = 0;
+            this.D3.TabIndex = 21;
             this.D3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.D3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E3
             // 
@@ -465,9 +482,9 @@
             this.E3.MaxLength = 1;
             this.E3.Name = "E3";
             this.E3.Size = new System.Drawing.Size(28, 26);
-            this.E3.TabIndex = 0;
+            this.E3.TabIndex = 22;
             this.E3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.E3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F3
             // 
@@ -477,9 +494,9 @@
             this.F3.MaxLength = 1;
             this.F3.Name = "F3";
             this.F3.Size = new System.Drawing.Size(28, 26);
-            this.F3.TabIndex = 0;
+            this.F3.TabIndex = 23;
             this.F3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.F3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G3
             // 
@@ -489,9 +506,9 @@
             this.G3.MaxLength = 1;
             this.G3.Name = "G3";
             this.G3.Size = new System.Drawing.Size(28, 26);
-            this.G3.TabIndex = 0;
+            this.G3.TabIndex = 24;
             this.G3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.G3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H3
             // 
@@ -501,9 +518,9 @@
             this.H3.MaxLength = 1;
             this.H3.Name = "H3";
             this.H3.Size = new System.Drawing.Size(28, 26);
-            this.H3.TabIndex = 0;
+            this.H3.TabIndex = 25;
             this.H3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.H3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I3
             // 
@@ -513,9 +530,10 @@
             this.I3.MaxLength = 1;
             this.I3.Name = "I3";
             this.I3.Size = new System.Drawing.Size(28, 26);
-            this.I3.TabIndex = 0;
+            this.I3.TabIndex = 26;
+            this.I3.Text = "4";
             this.I3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.I3.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B4
             // 
@@ -525,9 +543,9 @@
             this.B4.MaxLength = 1;
             this.B4.Name = "B4";
             this.B4.Size = new System.Drawing.Size(28, 26);
-            this.B4.TabIndex = 0;
+            this.B4.TabIndex = 28;
             this.B4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.B4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C4
             // 
@@ -537,9 +555,10 @@
             this.C4.MaxLength = 1;
             this.C4.Name = "C4";
             this.C4.Size = new System.Drawing.Size(28, 26);
-            this.C4.TabIndex = 0;
+            this.C4.TabIndex = 29;
+            this.C4.Text = "5";
             this.C4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.C4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D4
             // 
@@ -549,9 +568,10 @@
             this.D4.MaxLength = 1;
             this.D4.Name = "D4";
             this.D4.Size = new System.Drawing.Size(28, 26);
-            this.D4.TabIndex = 0;
+            this.D4.TabIndex = 30;
+            this.D4.Text = "3";
             this.D4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.D4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E4
             // 
@@ -561,9 +581,10 @@
             this.E4.MaxLength = 1;
             this.E4.Name = "E4";
             this.E4.Size = new System.Drawing.Size(28, 26);
-            this.E4.TabIndex = 0;
+            this.E4.TabIndex = 31;
+            this.E4.Text = "1";
             this.E4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-   
+            this.E4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F4
             // 
@@ -573,9 +594,10 @@
             this.F4.MaxLength = 1;
             this.F4.Name = "F4";
             this.F4.Size = new System.Drawing.Size(28, 26);
-            this.F4.TabIndex = 0;
+            this.F4.TabIndex = 32;
+            this.F4.Text = "2";
             this.F4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-     
+            this.F4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G4
             // 
@@ -585,9 +607,10 @@
             this.G4.MaxLength = 1;
             this.G4.Name = "G4";
             this.G4.Size = new System.Drawing.Size(28, 26);
-            this.G4.TabIndex = 0;
+            this.G4.TabIndex = 33;
+            this.G4.Text = "4";
             this.G4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.G4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H4
             // 
@@ -597,8 +620,10 @@
             this.H4.MaxLength = 1;
             this.H4.Name = "H4";
             this.H4.Size = new System.Drawing.Size(28, 26);
-            this.H4.TabIndex = 0;
+            this.H4.TabIndex = 34;
+            this.H4.Text = "7";
             this.H4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.H4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I4
             // 
@@ -608,8 +633,10 @@
             this.I4.MaxLength = 1;
             this.I4.Name = "I4";
             this.I4.Size = new System.Drawing.Size(28, 26);
-            this.I4.TabIndex = 0;
+            this.I4.TabIndex = 35;
+            this.I4.Text = "9";
             this.I4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I4.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B5
             // 
@@ -619,9 +646,9 @@
             this.B5.MaxLength = 1;
             this.B5.Name = "B5";
             this.B5.Size = new System.Drawing.Size(28, 26);
-            this.B5.TabIndex = 0;
+            this.B5.TabIndex = 37;
             this.B5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.B5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C5
             // 
@@ -631,9 +658,9 @@
             this.C5.MaxLength = 1;
             this.C5.Name = "C5";
             this.C5.Size = new System.Drawing.Size(28, 26);
-            this.C5.TabIndex = 0;
+            this.C5.TabIndex = 38;
             this.C5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.C5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D5
             // 
@@ -643,9 +670,9 @@
             this.D5.MaxLength = 1;
             this.D5.Name = "D5";
             this.D5.Size = new System.Drawing.Size(28, 26);
-            this.D5.TabIndex = 0;
+            this.D5.TabIndex = 39;
             this.D5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
+            this.D5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E5
             // 
@@ -655,9 +682,9 @@
             this.E5.MaxLength = 1;
             this.E5.Name = "E5";
             this.E5.Size = new System.Drawing.Size(28, 26);
-            this.E5.TabIndex = 0;
+            this.E5.TabIndex = 40;
             this.E5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-       
+            this.E5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F5
             // 
@@ -667,9 +694,9 @@
             this.F5.MaxLength = 1;
             this.F5.Name = "F5";
             this.F5.Size = new System.Drawing.Size(28, 26);
-            this.F5.TabIndex = 0;
+            this.F5.TabIndex = 41;
             this.F5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.F5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G5
             // 
@@ -679,9 +706,9 @@
             this.G5.MaxLength = 1;
             this.G5.Name = "G5";
             this.G5.Size = new System.Drawing.Size(28, 26);
-            this.G5.TabIndex = 0;
+            this.G5.TabIndex = 42;
             this.G5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.G5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H5
             // 
@@ -691,8 +718,9 @@
             this.H5.MaxLength = 1;
             this.H5.Name = "H5";
             this.H5.Size = new System.Drawing.Size(28, 26);
-            this.H5.TabIndex = 0;
+            this.H5.TabIndex = 43;
             this.H5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.H5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I5
             // 
@@ -702,8 +730,9 @@
             this.I5.MaxLength = 1;
             this.I5.Name = "I5";
             this.I5.Size = new System.Drawing.Size(28, 26);
-            this.I5.TabIndex = 0;
+            this.I5.TabIndex = 44;
             this.I5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I5.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B6
             // 
@@ -713,9 +742,9 @@
             this.B6.MaxLength = 1;
             this.B6.Name = "B6";
             this.B6.Size = new System.Drawing.Size(28, 26);
-            this.B6.TabIndex = 0;
+            this.B6.TabIndex = 46;
             this.B6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-     
+            this.B6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C6
             // 
@@ -725,9 +754,9 @@
             this.C6.MaxLength = 1;
             this.C6.Name = "C6";
             this.C6.Size = new System.Drawing.Size(28, 26);
-            this.C6.TabIndex = 0;
+            this.C6.TabIndex = 47;
             this.C6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-      
+            this.C6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D6
             // 
@@ -737,9 +766,9 @@
             this.D6.MaxLength = 1;
             this.D6.Name = "D6";
             this.D6.Size = new System.Drawing.Size(28, 26);
-            this.D6.TabIndex = 0;
+            this.D6.TabIndex = 48;
             this.D6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
+            this.D6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E6
             // 
@@ -749,9 +778,10 @@
             this.E6.MaxLength = 1;
             this.E6.Name = "E6";
             this.E6.Size = new System.Drawing.Size(28, 26);
-            this.E6.TabIndex = 0;
+            this.E6.TabIndex = 49;
+            this.E6.Text = "7";
             this.E6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
+            this.E6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F6
             // 
@@ -761,9 +791,10 @@
             this.F6.MaxLength = 1;
             this.F6.Name = "F6";
             this.F6.Size = new System.Drawing.Size(28, 26);
-            this.F6.TabIndex = 0;
+            this.F6.TabIndex = 50;
+            this.F6.Text = "4";
             this.F6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.F6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G6
             // 
@@ -773,9 +804,10 @@
             this.G6.MaxLength = 1;
             this.G6.Name = "G6";
             this.G6.Size = new System.Drawing.Size(28, 26);
-            this.G6.TabIndex = 0;
+            this.G6.TabIndex = 51;
+            this.G6.Text = "5";
             this.G6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.G6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H6
             // 
@@ -785,8 +817,9 @@
             this.H6.MaxLength = 1;
             this.H6.Name = "H6";
             this.H6.Size = new System.Drawing.Size(28, 26);
-            this.H6.TabIndex = 0;
-         
+            this.H6.TabIndex = 52;
+            this.H6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.H6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I6
             // 
@@ -796,8 +829,9 @@
             this.I6.MaxLength = 1;
             this.I6.Name = "I6";
             this.I6.Size = new System.Drawing.Size(28, 26);
-            this.I6.TabIndex = 0;
+            this.I6.TabIndex = 53;
             this.I6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I6.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B7
             // 
@@ -807,9 +841,10 @@
             this.B7.MaxLength = 1;
             this.B7.Name = "B7";
             this.B7.Size = new System.Drawing.Size(28, 26);
-            this.B7.TabIndex = 0;
+            this.B7.TabIndex = 55;
+            this.B7.Text = "2";
             this.B7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-    
+            this.B7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C7
             // 
@@ -819,9 +854,9 @@
             this.C7.MaxLength = 1;
             this.C7.Name = "C7";
             this.C7.Size = new System.Drawing.Size(28, 26);
-            this.C7.TabIndex = 0;
+            this.C7.TabIndex = 56;
             this.C7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-    
+            this.C7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D7
             // 
@@ -831,9 +866,9 @@
             this.D7.MaxLength = 1;
             this.D7.Name = "D7";
             this.D7.Size = new System.Drawing.Size(28, 26);
-            this.D7.TabIndex = 0;
+            this.D7.TabIndex = 57;
             this.D7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.D7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E7
             // 
@@ -843,9 +878,9 @@
             this.E7.MaxLength = 1;
             this.E7.Name = "E7";
             this.E7.Size = new System.Drawing.Size(28, 26);
-            this.E7.TabIndex = 0;
+            this.E7.TabIndex = 58;
             this.E7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.E7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F7
             // 
@@ -855,43 +890,50 @@
             this.F7.MaxLength = 1;
             this.F7.Name = "F7";
             this.F7.Size = new System.Drawing.Size(28, 26);
-            this.F7.TabIndex = 0;
+            this.F7.TabIndex = 59;
+            this.F7.Text = "1";
             this.F7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-      
+            this.F7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G7
             // 
             this.G7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.G7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.G7.ForeColor = System.Drawing.SystemColors.Window;
             this.G7.Location = new System.Drawing.Point(216, 204);
             this.G7.MaxLength = 1;
             this.G7.Name = "G7";
             this.G7.Size = new System.Drawing.Size(28, 26);
-            this.G7.TabIndex = 0;
+            this.G7.TabIndex = 60;
             this.G7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.G7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H7
             // 
             this.H7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.H7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.H7.ForeColor = System.Drawing.SystemColors.Window;
             this.H7.Location = new System.Drawing.Point(250, 204);
             this.H7.MaxLength = 1;
             this.H7.Name = "H7";
             this.H7.Size = new System.Drawing.Size(28, 26);
-            this.H7.TabIndex = 0;
+            this.H7.TabIndex = 61;
             this.H7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.H7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I7
             // 
             this.I7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.I7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.I7.ForeColor = System.Drawing.SystemColors.Window;
             this.I7.Location = new System.Drawing.Point(284, 204);
             this.I7.MaxLength = 1;
             this.I7.Name = "I7";
             this.I7.Size = new System.Drawing.Size(28, 26);
-            this.I7.TabIndex = 0;
+            this.I7.TabIndex = 62;
+            this.I7.Text = "5";
             this.I7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I7.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B8
             // 
@@ -901,9 +943,10 @@
             this.B8.MaxLength = 1;
             this.B8.Name = "B8";
             this.B8.Size = new System.Drawing.Size(28, 26);
-            this.B8.TabIndex = 0;
+            this.B8.TabIndex = 64;
+            this.B8.Text = "7";
             this.B8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.B8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C8
             // 
@@ -913,9 +956,9 @@
             this.C8.MaxLength = 1;
             this.C8.Name = "C8";
             this.C8.Size = new System.Drawing.Size(28, 26);
-            this.C8.TabIndex = 0;
+            this.C8.TabIndex = 65;
             this.C8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.C8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D8
             // 
@@ -925,9 +968,9 @@
             this.D8.MaxLength = 1;
             this.D8.Name = "D8";
             this.D8.Size = new System.Drawing.Size(28, 26);
-            this.D8.TabIndex = 0;
+            this.D8.TabIndex = 66;
             this.D8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-          
+            this.D8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E8
             // 
@@ -937,9 +980,9 @@
             this.E8.MaxLength = 1;
             this.E8.Name = "E8";
             this.E8.Size = new System.Drawing.Size(28, 26);
-            this.E8.TabIndex = 0;
+            this.E8.TabIndex = 67;
             this.E8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.E8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F8
             // 
@@ -949,43 +992,52 @@
             this.F8.MaxLength = 1;
             this.F8.Name = "F8";
             this.F8.Size = new System.Drawing.Size(28, 26);
-            this.F8.TabIndex = 0;
+            this.F8.TabIndex = 68;
+            this.F8.Text = "6";
             this.F8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.F8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G8
             // 
             this.G8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.G8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.G8.ForeColor = System.Drawing.SystemColors.Window;
             this.G8.Location = new System.Drawing.Point(216, 236);
             this.G8.MaxLength = 1;
             this.G8.Name = "G8";
             this.G8.Size = new System.Drawing.Size(28, 26);
-            this.G8.TabIndex = 0;
+            this.G8.TabIndex = 69;
+            this.G8.Text = "8";
             this.G8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.G8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H8
             // 
             this.H8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.H8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.H8.ForeColor = System.Drawing.SystemColors.Window;
             this.H8.Location = new System.Drawing.Point(250, 236);
             this.H8.MaxLength = 1;
             this.H8.Name = "H8";
             this.H8.Size = new System.Drawing.Size(28, 26);
-            this.H8.TabIndex = 0;
+            this.H8.TabIndex = 70;
+            this.H8.Text = "9";
             this.H8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.H8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I8
             // 
             this.I8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.I8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.I8.ForeColor = System.Drawing.SystemColors.Window;
             this.I8.Location = new System.Drawing.Point(284, 236);
             this.I8.MaxLength = 1;
             this.I8.Name = "I8";
             this.I8.Size = new System.Drawing.Size(28, 26);
-            this.I8.TabIndex = 0;
+            this.I8.TabIndex = 71;
+            this.I8.Text = "1";
             this.I8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I8.TextChanged += new System.EventHandler(this.Changed);
             // 
             // B9
             // 
@@ -995,9 +1047,9 @@
             this.B9.MaxLength = 1;
             this.B9.Name = "B9";
             this.B9.Size = new System.Drawing.Size(28, 26);
-            this.B9.TabIndex = 0;
+            this.B9.TabIndex = 73;
             this.B9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-         
+            this.B9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // C9
             // 
@@ -1007,9 +1059,9 @@
             this.C9.MaxLength = 1;
             this.C9.Name = "C9";
             this.C9.Size = new System.Drawing.Size(28, 26);
-            this.C9.TabIndex = 0;
+            this.C9.TabIndex = 74;
             this.C9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-
+            this.C9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // D9
             // 
@@ -1019,9 +1071,10 @@
             this.D9.MaxLength = 1;
             this.D9.Name = "D9";
             this.D9.Size = new System.Drawing.Size(28, 26);
-            this.D9.TabIndex = 0;
+            this.D9.TabIndex = 75;
+            this.D9.Text = "4";
             this.D9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.D9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // E9
             // 
@@ -1031,9 +1084,10 @@
             this.E9.MaxLength = 1;
             this.E9.Name = "E9";
             this.E9.Size = new System.Drawing.Size(28, 26);
-            this.E9.TabIndex = 0;
+            this.E9.TabIndex = 76;
+            this.E9.Text = "3";
             this.E9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-           
+            this.E9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // F9
             // 
@@ -1043,60 +1097,93 @@
             this.F9.MaxLength = 1;
             this.F9.Name = "F9";
             this.F9.Size = new System.Drawing.Size(28, 26);
-            this.F9.TabIndex = 0;
+            this.F9.TabIndex = 77;
             this.F9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-        
+            this.F9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // G9
             // 
             this.G9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.G9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.G9.ForeColor = System.Drawing.SystemColors.Window;
             this.G9.Location = new System.Drawing.Point(216, 268);
             this.G9.MaxLength = 1;
             this.G9.Name = "G9";
             this.G9.Size = new System.Drawing.Size(28, 26);
-            this.G9.TabIndex = 0;
+            this.G9.TabIndex = 78;
+            this.G9.Text = "7";
             this.G9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            
+            this.G9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // H9
             // 
             this.H9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.H9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.H9.ForeColor = System.Drawing.SystemColors.Window;
             this.H9.Location = new System.Drawing.Point(250, 268);
             this.H9.MaxLength = 1;
             this.H9.Name = "H9";
             this.H9.Size = new System.Drawing.Size(28, 26);
-            this.H9.TabIndex = 0;
+            this.H9.TabIndex = 79;
             this.H9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.H9.TextChanged += new System.EventHandler(this.Changed);
             // 
             // I9
             // 
             this.I9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.I9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.I9.ForeColor = System.Drawing.SystemColors.Window;
             this.I9.Location = new System.Drawing.Point(284, 268);
             this.I9.MaxLength = 1;
             this.I9.Name = "I9";
             this.I9.Size = new System.Drawing.Size(28, 26);
-            this.I9.TabIndex = 0;
+            this.I9.TabIndex = 80;
+            this.I9.Text = "6";
             this.I9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.I9.TextChanged += new System.EventHandler(this.Changed);
             // 
-            // GENERATE
+            // btn_solve
             // 
-            this.GENERATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.GENERATE.Location = new System.Drawing.Point(114, 301);
-            this.GENERATE.Name = "GENERATE";
-            this.GENERATE.Size = new System.Drawing.Size(86, 34);
-            this.GENERATE.TabIndex = 1;
-            this.GENERATE.Text = "Generate";
-            this.GENERATE.UseVisualStyleBackColor = true;
+            this.btn_solve.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_solve.Location = new System.Drawing.Point(13, 303);
+            this.btn_solve.Name = "btn_solve";
+            this.btn_solve.Size = new System.Drawing.Size(87, 32);
+            this.btn_solve.TabIndex = 82;
+            this.btn_solve.Text = "Solve";
+            this.btn_solve.UseVisualStyleBackColor = true;
+            this.btn_solve.TextChanged += new System.EventHandler(this.Changed);
+            this.btn_solve.Click += new System.EventHandler(this.GENERATE_Click);
+            // 
+            // btn_generate
+            // 
+            this.btn_generate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_generate.Location = new System.Drawing.Point(115, 303);
+            this.btn_generate.Name = "btn_generate";
+            this.btn_generate.Size = new System.Drawing.Size(87, 32);
+            this.btn_generate.TabIndex = 83;
+            this.btn_generate.Text = "Generate";
+            this.btn_generate.UseVisualStyleBackColor = true;
+            this.btn_generate.Click += new System.EventHandler(this.btn_generate_Click);
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_reset.Location = new System.Drawing.Point(224, 303);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(87, 32);
+            this.btn_reset.TabIndex = 84;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 339);
-            this.Controls.Add(this.GENERATE);
+            this.ClientSize = new System.Drawing.Size(324, 340);
+            this.Controls.Add(this.btn_reset);
+            this.Controls.Add(this.btn_generate);
+            this.Controls.Add(this.btn_solve);
             this.Controls.Add(this.A9);
             this.Controls.Add(this.A8);
             this.Controls.Add(this.A7);
@@ -1181,8 +1268,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "SUDOKU";
-          
+            this.Text = "SUDOKU-Solver";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1271,7 +1357,9 @@
         private System.Windows.Forms.TextBox G9;
         private System.Windows.Forms.TextBox H9;
         private System.Windows.Forms.TextBox I9;
-        private System.Windows.Forms.Button GENERATE;
+        private System.Windows.Forms.Button btn_solve;
+        private System.Windows.Forms.Button btn_generate;
+        private System.Windows.Forms.Button btn_reset;
     }
 }
 
